@@ -5,7 +5,7 @@ Library    Collections
 
 *** Variables ***
 ${URL}                    https://vietnamnet.vn/
-${OPTIONS}    add_argument=--ignore-certificate-errors
+${BROWER}    Chrome
 ${text_timKiem}           Công nghệ
 ${xp_btn_timKiem}         xpath=//span[@class="icon-search"]
 ${xp_btn_timKiem2}        //button[@class="btn__search"]
@@ -25,7 +25,7 @@ ${trang_dang_xem}         1
 Enter keyword
     [Documentation]    Tìm kiếm tin tức với từ khoá Công nghệ
     # 1. Vào website tin tức vietnamnet.vn.
-    Open Browser    ${URL}    Chrome    ${OPTIONS}
+    Open Browser    ${URL}    ${BROWER}    
     Maximize Browser Window
     Wait Until Element Is Visible    ${xp_btn_timKiem}
     Click Element    ${xp_btn_timKiem}

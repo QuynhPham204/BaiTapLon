@@ -5,7 +5,7 @@ Library    Collections
 
 *** Variables ***
 ${URL}                    https://vietnamnet.vn/
-${BROWER}    Chrome
+${BROWER}                 Chrome
 ${text_timKiem}           Công nghệ
 ${xp_btn_timKiem}         xpath=//span[@class="icon-search"]
 ${xp_btn_timKiem2}        //button[@class="btn__search"]

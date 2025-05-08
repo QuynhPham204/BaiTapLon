@@ -49,7 +49,7 @@ Click pagination
         Wait Until Element Is Visible    ${xp_tieuDe}    timeout=10
         Sleep    2s
         ${bai_viet_elements}=    Get WebElements    ${xp_baiViet}
-        # 4. Lấy tất cả dữ liệu(Tiêu đề, Mô tả, Hình ảnh) hiển thị ở bài viết.
+        # 4. Lấy tất cả dữ liệu(Tiêu đề, Mô tả, Hình ảnh, Nội du) hiển thị ở bài viết.
         FOR    ${bai_viet}    IN    @{bai_viet_elements}
             ${text_tieu_de}    Get Text    ${xp_tieuDe}
             ${text_mo_ta}    Get Text    ${xp_moTa}
